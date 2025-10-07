@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tentang Aplikasi - Prediksi Nilai Ujian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  </head>
+  <body class="bg-gradient-primary">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+          <i class="fas fa-chart-line me-2"></i>
+          Prediksi Nilai Ujian
+        </a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="{{ url_for('index') }}">
+            <i class="fas fa-home me-1"></i>
+            Beranda
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <!-- Hero Section -->
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-3">
+              <i class="fas fa-info-circle me-3"></i>
+              Tentang Aplikasi
+            </h1>
+            <p class="lead text-white-50">
+              Informasi detail tentang model machine learning dan metodologi prediksi
+            </p>
+          </div>
+
+          <!-- Model Information Card -->
+          <div class="card shadow-lg border-0 rounded-4 mb-4">
+            <div class="card-body p-5">
+              <h2 class="card-title mb-4">
+                <i class="fas fa-brain text-primary me-2"></i>
+                Informasi Model Machine Learning
+              </h2>
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="mb-3">Spesifikasi Model</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Algoritma:</strong> Regresi Linear Sederhana
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Library:</strong> scikit-learn
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Variabel Input:</strong> Jam Belajar per Hari
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-check-circle text-success me-2"></i>
+                      <strong>Output:</strong> Prediksi Nilai Ujian
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="col-md-6">
+                  <h4 class="mb-3">Metodologi</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <i class="fas fa-database text-info me-2"></i>
+                      <strong>Dataset:</strong> Data historis siswa
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-chart-line text-info me-2"></i>
+                      <strong>Training:</strong> Supervised Learning
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-cogs text-info me-2"></i>
+                      <strong>Optimization:</strong> Least Squares Method
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-shield-alt text-info me-2"></i>
+                      <strong>Validation:</strong> Cross-validation
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="row mb-4">
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 border-0 bg-white bg-opacity-10 text-white">
+                <div class="card-body text-center">
+                  <i class="fas fa-chart-bar fa-3x mb-3"></i>
+                  <h5 class="card-title">Akurasi Tinggi</h5>
+                  <p class="card-text">Model telah dioptimalkan untuk memberikan prediksi yang akurat berdasarkan data historis</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 border-0 bg-white bg-opacity-10 text-white">
+                <div class="card-body text-center">
+                  <i class="fas fa-clock fa-3x mb-3"></i>
+                  <h5 class="card-title">Real-time</h5>
+                  <p class="card-text">Hasil prediksi langsung ditampilkan dalam hitungan detik tanpa delay</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-3">
+              <div class="card h-100 border-0 bg-white bg-opacity-10 text-white">
+                <div class="card-body text-center">
+                  <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                  <h5 class="card-title">Responsive</h5>
+                  <p class="card-text">Aplikasi dapat diakses optimal di desktop, tablet, dan smartphone</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- How It Works -->
+          <div class="card shadow-lg border-0 rounded-4 mb-4">
+            <div class="card-body p-5">
+              <h2 class="card-title mb-4">
+                <i class="fas fa-cogs text-primary me-2"></i>
+                Cara Kerja Aplikasi
+              </h2>
+              
+              <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                  <div class="step-circle bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <i class="fas fa-keyboard fa-2x"></i>
+                  </div>
+                  <h5>1. Input Data</h5>
+                  <p class="text-muted">Masukkan jumlah jam belajar per hari</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                  <div class="step-circle bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <i class="fas fa-cogs fa-2x"></i>
+                  </div>
+                  <h5>2. Proses Model</h5>
+                  <p class="text-muted">Model regresi linear memproses input</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                  <div class="step-circle bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                  </div>
+                  <h5>3. Prediksi</h5>
+                  <p class="text-muted">Menghasilkan estimasi nilai ujian</p>
+                </div>
+                
+                <div class="col-md-3 text-center mb-4">
+                  <div class="step-circle bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                    <i class="fas fa-trophy fa-2x"></i>
+                  </div>
+                  <h5>4. Hasil</h5>
+                  <p class="text-muted">Tampilkan prediksi dengan visualisasi menarik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Details -->
+          <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-5">
+              <h2 class="card-title mb-4">
+                <i class="fas fa-code text-primary me-2"></i>
+                Detail Teknis
+              </h2>
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <h4 class="mb-3">Backend Technology</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <i class="fab fa-python text-primary me-2"></i>
+                      <strong>Python:</strong> 3.8+
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-flask text-primary me-2"></i>
+                      <strong>Flask:</strong> Web Framework
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-chart-line text-primary me-2"></i>
+                      <strong>scikit-learn:</strong> Machine Learning
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-save text-primary me-2"></i>
+                      <strong>joblib:</strong> Model Serialization
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="col-md-6">
+                  <h4 class="mb-3">Frontend Technology</h4>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <i class="fab fa-html5 text-danger me-2"></i>
+                      <strong>HTML5:</strong> Semantic Markup
+                    </li>
+                    <li class="mb-2">
+                      <i class="fab fa-css3-alt text-info me-2"></i>
+                      <strong>CSS3:</strong> Modern Styling
+                    </li>
+                    <li class="mb-2">
+                      <i class="fab fa-js-square text-warning me-2"></i>
+                      <strong>JavaScript:</strong> Interactivity
+                    </li>
+                    <li class="mb-2">
+                      <i class="fab fa-bootstrap text-primary me-2"></i>
+                      <strong>Bootstrap 5:</strong> UI Framework
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <p class="mb-0">
+          <i class="fas fa-code me-2"></i>
+          Dibuat dengan Flask & Bootstrap | 
+          <i class="fas fa-chart-line me-2"></i>
+          Model: Regresi Linear Sederhana
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

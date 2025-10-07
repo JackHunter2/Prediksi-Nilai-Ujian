@@ -1,0 +1,313 @@
+/* Custom CSS untuk Aplikasi Prediksi Nilai Ujian */
+
+/* Background Gradient */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Navbar Custom */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Card Animations */
+.card {
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Form Styling */
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Result Container */
+.result-container {
+    animation: fadeInUp 0.6s ease;
+}
+
+.prediction-result {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+/* Placeholder Result */
+.placeholder-result {
+    background: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.placeholder-result:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Info Cards */
+.card.bg-white.bg-opacity-10 {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card.bg-white.bg-opacity-10:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-3px);
+}
+
+/* Alert Styling */
+.alert {
+    border-radius: 15px;
+    border: none;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    color: #155724;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+    color: #721c24;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Loading Animation */
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card-body {
+        padding: 2rem !important;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .card-body {
+        padding: 1.5rem !important;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+}
+
+/* Icon Animations */
+.fas.fa-trophy {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Form Validation */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Utility Classes */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #667eea, #764ba2) 1;
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --card-bg: #2d2d2d;
+    --border-color: #404040;
+}
+
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: var(--bg-secondary);
+    border-color: #667eea;
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .input-group-text {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .bg-white.bg-opacity-10 {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .placeholder-result {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .alert-success {
+    background: linear-gradient(135deg, #1e4d2b, #2d5a3d);
+    color: #d4edda;
+}
+
+[data-theme="dark"] .alert-danger {
+    background: linear-gradient(135deg, #4d1e1e, #5a2d2d);
+    color: #f8d7da;
+}
+
+/* Dark Mode Toggle Animation */
+#darkModeToggle {
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+}
+
+#darkModeIcon {
+    transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] #darkModeIcon {
+    transform: rotate(180deg);
+}
